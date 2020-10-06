@@ -17,7 +17,6 @@ export default class Tasks extends React.Component {
 
     render(){
         const tasksList = this.state.tasks
-        console.log('tasklist', tasksList)
         return (
             <>
                 <h3>Tasks for this week:</h3>
