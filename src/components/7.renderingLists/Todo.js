@@ -36,19 +36,20 @@ export default class Todo extends React.Component {
             <>
             <InputText
                 value={value}
-                onChange={this.handleInputValue}
+                onInputChange={this.handleInputValue}
                 placeholder={'enter a todo...'}
             />
             <AddTaskButton
+                disabled={!value}
                 type="submit"
                 addTask={this.handleAddTask}
             />
             <ListContainer>
             <List>
             {todos.map(todo => (
-                <div style={{ display: 'flex', flexDirection: 'row', marginBottom: '0.5rem'}}>
+                <div key={todo} style={{ display: 'flex', flexDirection: 'row', marginBottom: '0.5rem'}}>
                 <ListItem item={todo}/>
-                <RemoveTaskButton handleRemoveTask={() => this.handleRemoveTask(todo)}/>
+                <RemoveTaskButton handleRemoveTask={() => this.handleRemoveTask(todo)} />
                 </div>
             ))}
             </List>

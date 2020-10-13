@@ -10,16 +10,17 @@ export default class LoginPage extends React.Component {
     }
 
     render(){
+        const { isLogged } = this.state
         return(
             <>
-            <p>{this.state.isLogged 
+            <p>{isLogged 
                 ? 'Esta pagina solo puedo verla por que estoy logueado'
                 : 'Inicia sesión para ver contenido privado'
             }</p>
             <button
                 onClick={this.handleLogin}
-                style={{ cursor: 'pointer', backgroundColor: this.state.isLogged ? 'red' : 'green'}}
-            >{this.state.isLogged ? 'Close session' : 'Login'}</button>
+                style={{ cursor: 'pointer', backgroundColor: isLogged ? 'red' : 'green'}}
+            >{isLogged ? 'Close session' : 'Login'}</button>
             </>
         )
     }

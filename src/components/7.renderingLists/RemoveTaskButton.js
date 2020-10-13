@@ -5,7 +5,7 @@ const RemoveTaskButton = (props) => {
     return(
         <button
             onClick={props.handleRemoveTask}
-            style={{ marginLeft: '1rem', padding: '0.25rem'}}
+            style={{ marginLeft: '1rem', padding: '0.25rem', cursor: 'pointer'}}
         >Remove</button>
     )
 }

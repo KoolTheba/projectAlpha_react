@@ -16,9 +16,16 @@ export default class Select extends React.Component {
             <>
             <h3>We're Select items!</h3>
             <p>I'm the selected one: {this.state.value}</p>
-            <select onChange={this.handleSelect} style={{cursor: 'pointer'}}>
+            <select
+                value={this.state.value}
+                onChange={this.handleSelect} 
+                style={{cursor: 'pointer'}}
+            >
             {options.map(option => (
-                <option key={option}>{option}</option>
+                <option 
+                    key={option}
+                    value={option}    
+                >{option}</option>
             ))}
             </select>
             </>

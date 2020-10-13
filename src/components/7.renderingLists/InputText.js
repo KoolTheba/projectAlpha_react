@@ -5,8 +5,9 @@ const InputText = (props) => {
         <>
         <input
             value={props.value}
+            type={'text'}
             placeholder={props.placeholder}
-            onChange={props.onChange}
+            onChange={props.onInputChange}
         ></input>
         </>
     )
