@@ -3,18 +3,28 @@ import React from 'react'
 const ApiCallsHOC = (Component, url) => {
     return class extends React.Component {
         state = {
-            data: []
+            data: [],
+            loading: true
+        }
+
+        componentDidMount(){
+            this.fetchData()
         }
     
-        async componentDidMount(){
-            let response = await fetch(url)
-            let data = await response.json()
+        fetchData = async () => {
+            const data = await (await fetch(url)).json()
             this.setState({ data })
+            this.setState({ loading: false})
         }
     
         render(){
+            const {data, loading} = this.state
             return (
-                <Component data={this.state.data}/>
+                <>
+                {loading 
+                ? <h2>Loading...Loading</h2> 
+                : <Component data={data}/>}
+                </>
             )
         }
     }
