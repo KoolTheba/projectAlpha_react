@@ -8,8 +8,7 @@ export default class ColorPicker extends React.Component {
         color: 'green'
     }
 
-    handleColorChange = (color, event) => {
-        console.log({color})
+    handleColorChange = (color) => {
         this.setState({ 
             background: color.hex,
             color: color.hex
