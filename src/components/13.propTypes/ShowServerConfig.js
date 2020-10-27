@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 const ShowServerConfig = (props) => {
 
+    console.log('PROPS', props)
+
     return(
         <>
         <h3>I'm showing the Server Config</h3>
@@ -12,14 +14,14 @@ const ShowServerConfig = (props) => {
 }
 
 ShowServerConfig.propTypes = {
-    minConnections: PropTypes.bool,
-    maxConnections: PropTypes.bool,
-    restartAlways: PropTypes.bool,
+    config: PropTypes.exact({
+        minConnections: PropTypes.number,
+        maxConnections: PropTypes.number,
+        restartAlways: PropTypes.bool,
+    }).isRequired,
     environment: PropTypes.oneOf(['dev', 'play', 'live']),
-    customProp: (props) => {
-        if(props[environment] === 'live'){
-            return props[SSL] = PropTypes.bool.isRequired
-        }
+    SSL: (props) => {
+        if(props.environment === 'live' && !props.ssl) return new Error('SSL is required if enrironment is live')
     }
 }
 

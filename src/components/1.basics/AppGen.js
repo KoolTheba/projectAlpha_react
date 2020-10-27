@@ -9,7 +9,7 @@ import ConditionalRender from './components/1.basics/ConditionalRender'
 import ShowName2 from './components/1.basics/ShowName2'
 
 
-function App() {
+export default function AppGen() {
     return (
       <div className="App">
         <header className="App-header">
@@ -24,13 +24,7 @@ function App() {
           </>
         </header>
       </div>
-    );
+    )
 }
-  
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
   

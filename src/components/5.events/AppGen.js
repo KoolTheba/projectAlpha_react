@@ -7,8 +7,7 @@ import ItemNumber from './components/5.events/ItemNumber'
 import Focus from './components/5.events/Focus'
 import Select from './components/5.events/Select'
 
-
-function App() {
+export default function AppGen() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,12 +20,5 @@ function App() {
         </>
       </header>
     </div>
-  );
+  )
 }
-
-ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );

@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default (props) => <p>{props.content}</p>
+const Text = props => <p>{props.content}</p>
+
+export default Text

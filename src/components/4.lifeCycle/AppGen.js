@@ -6,8 +6,7 @@ import Names from './Names'
 import Seconds from './Seconds' 
 import Tasks from './Tasks'
 
-
-class App extends React.Component {
+export class AppGen extends React.Component {
 
   state = {
     isShown: true
@@ -38,5 +37,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;

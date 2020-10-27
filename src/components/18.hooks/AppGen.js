@@ -9,7 +9,7 @@ import WrongText from './components/18.hooks/WrongText'
 import useFetchDataHook from './components/18.hooks/useFetchDataHook'
 import SimpsonsQuotes from './components/18.hooks/SimpsonsQuotes'
 
-function AppComponent() {
+function AppGen() {
 
   const [isShown, setShown] = useState(true)
   const [plants, setData] = useState([])
@@ -52,4 +52,4 @@ function AppComponent() {
   );
 }
 
-export default AppComponent;
+export default AppGen

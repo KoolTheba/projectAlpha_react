@@ -9,7 +9,7 @@ import Letters from './components/3.state/Letters'
 import Crono from './components/3.state/Crono'
 import Likes from './components/3.state/Likes'
 
-function App() {
+export default function AppGen() {
   return (
     <div className="App">
       <header className="App-header">
@@ -25,10 +25,3 @@ function App() {
     </div>
   );
 }
-
-ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );

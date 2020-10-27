@@ -11,7 +11,7 @@ import Loading from './components/2.props/Loading'
 import ButtonGreet from './components/2.props/ButtonGreet';
 import LogProps from './components/2.props/LogProps';
 
-function App() {
+export default function AppGen() {
     return (
       <div className="App">
         <header className="App-header">
@@ -39,11 +39,3 @@ function App() {
       </div>
     );
 }
-  
-
-ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props => {
+const LogProps = props => {
     return <p
         colors={props.colors}
         isactive={props.isactive}
@@ -10,3 +10,5 @@ export default props => {
     >{props.children}
     </p>
 }
+
+export default LogProps
