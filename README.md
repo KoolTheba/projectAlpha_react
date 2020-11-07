@@ -1,4 +1,4 @@
-## Project Alpha React 🦄 
+# Project Alpha React 🦄 
 **This project is meant to serve as a my showcase 💅 and also as a reference for whoever wants to hone their React skills!** 🚀
 
 You'll find a series of **practices**, small and not-so-small pieces of code that will help you to sharp, step by step, all the coolest React, Hooks, Router, Testing, Styling and GraphQL features.
