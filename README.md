@@ -23,7 +23,7 @@ Please follow the `steps` below for an easier navigation. In `lecture` you can f
 
 <br>
 <span>
-    <img src='https://media.giphy.com/media/ekjmhJUGHJm7FC4Juo/giphy.gif' alt="woman-swe"/>
+    <img src='https://media.giphy.com/media/ekjmhJUGHJm7FC4Juo/giphy-downsized.gif' alt="woman-swe"/>
 </span>
 </br>
 
