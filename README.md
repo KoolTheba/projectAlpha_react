@@ -3,6 +3,12 @@
 
 You'll find a series of **practices**, small and not-so-small pieces of code that will help you to sharp, step by step, all the coolest React, Hooks, Router, Testing, Styling and GraphQL features.
 
+<br>
+<span>
+    <img src='https://media.giphy.com/media/3oEdv2vgyPH1PVeS2I/giphy.gif' alt="woman-coding"/>
+</span>
+</br>
+
 If you can read Spanish, you can follow the notes of the [React-GraphQL course](https://github.com/zamarrowski/Curso-React-Redux) by @zamarrowski and @Fictizia or, along with any other course, you can also practice with all these proposals.
 
 > I've realized that building a full application while learning React can be kind of overwhelming. 😅
@@ -14,6 +20,12 @@ If you can read Spanish, you can follow the notes of the [React-GraphQL course](
 Please follow the `steps` below for an easier navigation. In `lecture` you can find the practices instructions.
 
 2. If you want to practice and you can read Spanish, read first what the exercises are about in `lecture`, open you favorite code editor and GO FOR IT!! 💥💥
+
+<br>
+<span>
+    <img src='https://media.giphy.com/media/ekjmhJUGHJm7FC4Juo/giphy.gif' alt="woman-swe"/>
+</span>
+</br>
 
 ### Steps
 
